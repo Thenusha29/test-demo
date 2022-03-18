@@ -1,0 +1,39 @@
+.cover-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 1200px;
+}
+
+.main-heading{
+    font-size: 60px;
+    text-align: center;
+    color:rgb(15, 208, 214);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading{
+    background-color: rgb(136, 129, 116);
+    height: auto;
+    font-size: 25px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.card{
+    width:auto;
+    background-color:rgb(125, 231, 231);
+  
+    .card-footer{
+      background-color:rgb(65, 121, 121);
+    }
+  
+    .card-title{
+      color:rgb(22, 20, 163);
+    }
+  
+    .card-text1{
+      color:firebrick;
+    }
+  }

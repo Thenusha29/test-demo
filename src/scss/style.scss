@@ -1,0 +1,87 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+body {
+    background-color: #063c44;
+    //background-color: #47c8db;
+    //background-color:rgb(132, 134, 134);
+    font-family: Poppins, Helvetica, "sans-serif";
+    padding: 0 !important;
+  }
+
+.app-header{
+    background-color:rgb(49, 47, 47);
+    height: 65px;
+    // .navbar-toggler {
+    //     .navbar-toggler-icon {
+    //         background-color: white;
+    // }
+
+  
+}
+
+.app-footer{
+    font-size: 18px;
+    background-color:rgb(49, 47, 47);
+    color: white;
+
+    .fa-facebook-square{
+        color: aqua;
+        font-size: 25px;
+    }
+
+    .fa-instagram{
+        color: aqua;
+        font-size: 25px;
+    }
+
+    .fa-whatsapp{
+        color: aqua;
+        font-size: 25px;
+    }
+
+    .fa-telegram{
+        color: aqua;
+        font-size: 25px;
+    }
+}
+
+.breadcrumb{
+    background-color:rgb(67, 69, 194);
+    font-size: 15px;
+    font-weight: bolder;
+    a {
+        color: #040505;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    span {
+        color: #040505;
+    }
+}
+
+.sidebar {
+    background-color:rgb(74, 74, 77);
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    //color: rgb(219, 137, 90);
+}
+
+.sidebar .nav-link {
+    margin-top: 20px;
+    color: rgb(219, 137, 90);
+
+    .fa{
+        color: rgb(219, 137, 90);
+    }
+}
+
+
+
+

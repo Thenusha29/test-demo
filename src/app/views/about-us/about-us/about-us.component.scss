@@ -1,0 +1,43 @@
+.AU-img{
+    height:450px;
+    width: 350px;
+    //border: 3px solid #2b2928;
+    //border-radius: 50%;
+    box-shadow: 8px 8px 5px rgb(15, 36, 44);
+}
+.cover-img{
+    height:450px;
+    width: 710px;
+    box-shadow: -8px -8px 5px rgb(15, 36, 44);
+}
+
+.heading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+    text-align: center;
+    color: rgb(15, 208, 214);
+}
+
+.content{
+    border: 3px solid rgb(219, 137, 90);
+    height: 335px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    font-size: 17px;
+    text-align: justify;
+    color:darkgray;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.content2{
+    border: 3px solid rgb(219, 137, 90);
+    height: 330px;
+    //padding-left: 10px;
+    //padding-right: 15px;
+    padding-top: 20px;
+    font-size: 17px;
+    text-align: left;
+    color: darkgray;
+    font-family:Arial, Helvetica, sans-serif;
+}

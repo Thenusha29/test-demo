@@ -1,0 +1,34 @@
+.gif-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 1000px;
+  //box-shadow: 5px 5px 5px rgb(213, 219, 221);
+  border: 5px solid rgb(219, 137, 90);
+}
+
+.heading{
+    background-color: rgb(136, 129, 116);
+    height: auto;
+    font-size: 25px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.card{
+  width:auto;
+  background-color:rgb(125, 231, 231);
+
+  .card-footer{
+    background-color:rgb(65, 121, 121);
+  }
+
+  .card-title{
+    color:rgb(22, 20, 163);
+  }
+
+  .card-text1{
+    color:firebrick;
+  }
+}

@@ -1,0 +1,61 @@
+<app-header [sidebarToggler]="'lg'" [navbarBrandRouterLink]="['/dashboard']" [fixed]="true"
+  [navbarBrandFull]="{src: 'assets/PF7.png', width: 180, height: 200, alt: 'ESportsPro Logo'}">
+
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item px-3">
+      <a class="nav-link" style="color: rgb(9, 164, 211); font-size: 18px;font-weight: bold;" href="javascript: void(0)"
+        [routerLink]="['/home']">
+        <i class="fa fa-home" style="font-size: 23px;"></i>&nbsp;HOME</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" style="color: rgb(9, 164, 211); font-size: 18px;font-weight: bold;" href="javascript: void(0)"
+        [routerLink]="['/about-us']">
+        <i class="fa fa-users" style="font-size: 20px;"></i>&nbsp;ABOUT US</a>
+    </li>
+    <!-- <li class="nav-item d-md-down-none">
+      <a class="nav-link" style="color: rgb(9, 164, 211); font-size: 18px;font-weight: bold;" href="javascript: void(0)"
+      [routerLink]="['/cart']">
+      <i class="fa fa-shopping-cart" style="font-size: 20px;"></i>&nbsp;CART</a>
+    </li> -->
+    <li class="nav-item dropdown" dropdown placement="bottom right">
+      <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+        dropdownToggle (click)="false" style="color: rgb(9, 164, 211); font-size: 18px;font-weight: bold;">
+        <i class="fa fa-user" style="font-size: 20px;"></i>&nbsp;MY ACCOUNT
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
+        <div class="dropdown-header text-center"><strong>My Account</strong></div>
+        <a class="dropdown-item" href="javascript: void(0)" [routerLink]="['/my-account']">
+          <i class="fa fa-user"></i> My Profile</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+      </div>
+    </li>
+  </ul>
+</app-header>
+
+<div class="app-body">
+  <app-sidebar #appSidebar [fixed]="true" [display]="'lg'" [minimized]="sidebarMinimized"
+    (minimizedChange)="toggleMinimize($event)">
+    <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="appSidebar.minimized"></app-sidebar-nav>
+    <app-sidebar-minimizer></app-sidebar-minimizer>
+  </app-sidebar>
+
+  <!-- Main content -->
+  <main class="main">
+    <!-- <cui-breadcrumb>
+    </cui-breadcrumb> -->
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
+
+<app-footer>
+  <span>All Rights Reserved - <a href="">Path Finder</a> &copy; 2022</span>
+  <span class="ml-auto"><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;
+  <i class="fa fa-instagram"></i>&nbsp;&nbsp;
+  <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+  <i class="fa fa-telegram"></i>
+</span>
+  <span class="ml-auto">Powered by <a href=""> PathFinder</a></span>
+</app-footer>
